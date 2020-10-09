@@ -10,8 +10,8 @@ source:
   md5: 3f3cbed698606f4b14e76ccc7b5dd366
 
 build:
-  number: 1001
-  script: python setup.py install
+  number: 1002
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [win]    
 
 requirements:
@@ -28,6 +28,7 @@ test:
 about:
   home: https://github.com/cgoldberg/xvfbwrapper
   license: MIT
+  license_file: LICENSE
   summary: 'run headless display inside X virtual framebuffer (Xvfb)'
 
 extra:
