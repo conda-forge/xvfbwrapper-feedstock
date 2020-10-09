@@ -15,9 +15,9 @@ build:
   skip: true  # [win]    
 
 requirements:
-  build:
+  host:
     - python
-
+    - pip
   run:
     - python
 
@@ -33,5 +33,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - chrisfilo
     - satra
