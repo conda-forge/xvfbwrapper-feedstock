@@ -5,22 +5,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/x/xvfbwrapper/xvfbwrapper-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/x/xvfbwrapper/xvfbwrapper-{{ version }}.tar.gz
   sha256: bcf4ae571941b40254faf7a73432dfc119ad21ce688f1fdec533067037ecfc24
 
 build:
-  number: 1005
+  number: 1006
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - xvfbwrapper
 
