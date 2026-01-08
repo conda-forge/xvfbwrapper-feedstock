@@ -1,4 +1,4 @@
-{% set version = "0.2.16" %}
+{% set version = "0.2.18" %}
 
 package:
   name: xvfbwrapper
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/x/xvfbwrapper/xvfbwrapper-{{ version }}.tar.gz
-  sha256: 26800b35b7337f0e98c861910ea9cf08492caf7460edebac56624d08c8b9f805
+  sha256: 2c3f9194f49684557c24a596d9bf9dff93f4f28f0a59b02b703ded36f73a4334
 
 build:
   number: 0
