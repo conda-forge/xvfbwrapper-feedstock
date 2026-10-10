@@ -1,4 +1,4 @@
-{% set version = "0.2.34" %}
+{% set version = "0.2.35" %}
 
 package:
   name: xvfbwrapper
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/x/xvfbwrapper/xvfbwrapper-{{ version }}.tar.gz
-  sha256: e7f195f30f0ab4e39c5a66e19e0d0bfee0ce5afb3f49e0ae4e5a491a8417db2a
+  sha256: a4e1a6fcce157357b287495f8e3a7e4379eae656fad166692b0181459f926fad
 
 build:
   number: 0
